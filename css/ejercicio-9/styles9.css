@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+
+/* Contenedor principal */
+.contenedor {
+    position: relative;
+    width: 700px;
+    height: 400px;
+    margin: 40px auto;
+    border: 3px solid black;
+    background-color: #f2f2f2;
+}
+
+/* Estilo general de los elementos */
+.elemento {
+    width: 120px;
+    height: 70px;
+    padding: 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Position relative */
+.elemento-1 {
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+
+/* Position absolute */
+.elemento-2 {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 1;
+}
+
+/* Bottom y left */
+.elemento-3 {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+}
+
+/* Superposición */
+.elemento-4 {
+    position: absolute;
+    top: 130px;
+    right: 70px;
+    z-index: 10;
+}
