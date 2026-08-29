@@ -125,6 +125,85 @@ td:first-child {
                         <br><br>
 
                         <li><code>ejercicio-7.html</code></li>
+                        <h1>FORMULARIO DE INSCRIPCION UNIVERSITARIA</h1>
+                        <form>
+                            <label for="nombre">Nombre Completo</label>
+                             <input id="nombre" type="text" name ="nombre" required>
+                             
+                             <br><br>
+
+                            <label for="correo">Correo Electrónico</label>
+                             <input id="correo" type="email" name="correo" required>
+
+                             <br><br>
+
+                            <label for="edad">Edad</label>
+                            <input id="edad" type="number" name="edad" required>
+
+                            <br><br>
+
+                            <label for="fecha">Fecha de Nacimiento</label>
+                            <input id="fecha" type="date" name="fecha" required>
+
+                            <br><br>
+
+                            <label for="carrera">Carrera</label>
+                            <select id="carrera" name="carrera" required>
+                                <option value="">Seleccione Una Carrera</option>
+                                <option value="ingenieria en sistemas">INGENIERIA EN SISTEMAS</option>
+                                <option value="ingenieria industrial">INGENIERIA INDUSTRIAL</option>
+                                <option value="derecho">DERECHO</option>
+                                <option value="administracion de empresas">ADMINISTRACIÓN DE EMPRESAS</option>
+                            </select>
+
+                            <br><br>
+
+                            <p>Genero:</p>
+                            <input type="radio" id="masculino" name="genero" value="masculino" required></input>
+                            <label for="masculino">masculino</label>
+                            <input type="radio" id="femenino" name="genero" value="femenino" required></input>
+                            <label for="femenino">femenino</label>
+                            <input type="radio" id="otro" name="genero" value="otro" required></input>
+                            <label for="otro">otro</label>
+                            
+                            <br><br>
+
+                            <p>Habilidades:</p>
+                            <input type="checkbox" id="programacion" name="habilidades" value="programacion"></input>
+                            <label for="programacion">Programacion</label>
+                            <input type="checkbox" id="comunicacion" name="habilidades" value="comunicacion"></input>
+                            <label for="comunicacion">Comunicación</label>
+                            <input type="checkbox" id="trabajo en equipo" name="habilidades" value="trabajo en equipo"></input>
+                            <label for="trabajo en equipo">Trabajo en equipo</label>
+                            <input type="checkbox" id="liderazgo" name="habilidades" value="liderazgo"></input>
+                            <label for="liderazgo">Liderazgo</label>
+
+                            <br><br>
+
+                            <label for="foto">FOTO:</label>
+                            <input id="foto" type="file" name="foto" accept="image/*">
+
+                            <br><br>
+
+                            <label for="comentarios">Comentarios:</label>
+
+                            <br><br>
+
+                        <textarea 
+                            id="comentarios" 
+                            name="comentarios" 
+                            rows="4" 
+                            cols="50">
+                        </textarea>
+
+                        <br><br>
+
+                        <button type="submit">ENVIAR INSCRPCION</button>
+
+                        </form>
+
+                        <br><br>
+                        
                         <li><code>ejercicio-8.html</code></li>
                         <li><code>ejercicio-9.html</code></li>
                         <li><code>ejercicio-10.html</code></li>
