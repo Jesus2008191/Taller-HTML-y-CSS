@@ -1,148 +1,520 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
 
-   </style>
+```
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Taller de CSS</title>
+
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+```
+
 </head>
-<body> 
-                  <li>
-                    <code>HTML/</code>
-                    <ul>
-                        <li><code>ejercicio-1.html</code></li>
-                             <h5>TITULO SOLUCION DEL EJERCICIO 1</h5>
-                        <p>mi nombre es daniel castaño tengo 24 años y vivo en cali</p>
-                        
-                         <p>actualmente estudio derecho y me motiva la lectura </p>
-                         <footer>la calle es la universidad de la vidad </footer>
-                        </p>
 
-                        <br>
+<body>
 
-                        <li><code>ejercicio-2.html</code></li>
-                        <header>
-                            <h1>SERGIO DAVID PEÑA OSORIO</h1>
-                            </header>
-                            <main>
-                                <section>
-                                    <h2>carrera: ingeniería de sistemas</h2> 
-                                    <h3>ciudad: andalucia valle</h3>
-                                    <article>apasionado por la programación</article>
-                                    <strong>me gusta aprender cosas nuevas</strong>
-                                    <em>analitico</em><br>
-                                    <mark>actualmente cursando carrera  </mark><br>  
-                                    <u>2026</u><br> 
-                                    <small>tulua valle</small>
-                                </section>
-                            </main>
+```
+<header class="container">
 
-                            <br>
+    <nav>
 
-                             <li><code>ejercicio-3.html</code></li>
-                        <h1> lenguajes de programación</h1>
-                        <p><mark>Los lenguajes de programación presentados son: </mark>javascript, html, css, c++, java </p>
+        <ul>
+            <li>
+                <strong>Programación en Ambiente Web I</strong>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#ejercicios">Ejercicios</a>
+            </li>
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <section>
+
+        <h1>Taller de CSS</h1>
+
+        <p>
+            En este taller pondrás en práctica los conceptos
+            fundamentales de CSS mediante diferentes ejercicios
+            de diseño y presentación de páginas web.
+        </p>
+
+        <p>
+            Cada ejercicio debe desarrollarse utilizando un archivo
+            HTML y una hoja de estilos CSS independiente.
+        </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <section>
+
+        <h2>Organización de la entrega</h2>
+
+        <p>
+            Cada ejercicio debe desarrollarse en su propia carpeta.
+            Dentro de cada carpeta deben existir el archivo HTML
+            y su respectiva hoja de estilos CSS.
+        </p>
+
+        <ul>
+            <li>
+                <code>css/</code>
+
+                <ul>
+                    <li>
+                        <code>ejercicio-1/</code>
+
                         <ul>
-                            <ol>
-                                <li><h5>DESARROLLO WEB(FRONTED)</h5></li>
-                                 <ul style="list-style-type: square;">
-                                <li><b>javascript:</b> <em>el estándar para interactividad en el navegador</em></li>
-                                <li><b>html/css:</b> <em>esencial para el desarrollo web</em></li>
-                                <li><b>java:</b> <em>usado para aplicaciones y APIs</em></li>
-                             </ul>
-                                <ul> <b>html/css:</b> <em>no son lenguajes de programacion propiamente pero son esenciales</em></ul>
-                                <li><h5>DESARROLLO DE APP</h5></li>
-                                <ul><b>phyton:</b> <em> dominante,con librerias lenguaje de alto nivel</em></ul>
-                                <ul><b>c++:</b> <em> motores como unreal engine</em></ul>
-                                <ul><b>java:</b> <em> esencial para el desarrollo de aplicaciones o apis</em></ul>
-
-                            </ol>
-
+                            <li><code>index.html</code></li>
+                            <li><code>styles.css</code></li>
                         </ul>
+                    </li>
 
-                        <br>
+                    <li>
+                        <code>ejercicio-2/</code>
 
-                          <li><code>ejercicio-4.html</code></li>
-                        <h1>GALERIA PERSONAL</h1>
-                         <figure>
-                          <img src="assets/imagenes/2.png" alt="Pantallazos de prueba">
-                      <figcaption>Pantallazos de prueba</figcaption>
-                      </figure>
-                      <figure>
-                          <img src="assets/imagenes/1.png" alt="Pantallazos de prueba imagen 2">
-                      <figcaption>Pantallazos de prueba</figcaption>
-                      </figure>
-                        <img src="assets/imagenes/333.png" alt="Pantallazos de prueba imagen 3">
-                      <figcaption>Pantallazos de prueba</figcaption>
-                      </figure>
+                        <ul>
+                            <li><code>index.html</code></li>
+                            <li><code>styles.css</code></li>
+                        </ul>
+                    </li>
 
-                      <br>
+                    <li>
+                        <code>...</code>
+                    </li>
 
-                      <li><code>ejercicio-5.html</code></li>
-                            <h1>TABLA DE HORARIO ACADEMICO</h1>
-                        <table> 
-                            <thead>
-                                <tr>
-                                    <th>hora</th>
-                                    <th>lunes</th>
-                                    <th>martes</th>
-                                    <th>miercoles</th>
-                                    <th>jueves</th>
-                                    <th>viernes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>7:00-8:00</td>
-                                    <td>Matematicas III</td>
-                                    <td>Ingles</td>
-                                    <td>Bases de datos</td>
-                                    <td>Fisica II</td>
-                                    <td>Programacion en ambiente web</td>
-                                </tr>
-                                <tr>
-                                    <td>8:00-9:00</td>
-                                    <td>Bases de datos</td>
-                                    <td>Fisica II</td>
-                                    <td>Ingles</td>
-                                    <td>Programacion en ambiente web</td>
-                                    <td>Matematicas III</td>
-                                </tr>
-                                <tr>
-                                    <td>9:00-9:30</td>
-                                    <td colspan="5">DESCANSO</td>
-                                <tr>
-                                    <td>9:30-10:00</td>
-                                    <td>Fisica II</td>
-                                    <td>Programacion en ambiente web</td>
-                                    <td>Matematicas III</td>
-                                    <td>Bases de datos</td>
-                                    <td>Ingles</td>
-                                </tr>
-                                <tr>
-                                    <td>10:00-11:00</td>
-                                    <td>Programacion en ambiente web</td>
-                                    <td>Matematicas III</td>
-                                    <td>Bases de datos</td>
-                                    <td>Ingles</td>
-                                    <td>Fisica II</td>
-                                </tr>
-                                <tr>
-                                    <td>11:00-12:00</td>
-                                    <td>Ingles</td>
-                                    <td>Fisica II</td>
-                                    <td>Programacion en ambiente web</td>
-                                    <td>Matematicas III</td>
-                                    <td rowspan="2">Actividad Académica</td>
-                                </tr>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="6">Horario académico - Ingeniería de Sistemas</td>
-                                    </tr>
-                                </tfoot>
-                                </table>
-                            </tbody>
+                    <li>
+                        <code>ejercicio-10/</code>
+
+                        <ul>
+                            <li><code>index.html</code></li>
+                            <li><code>styles.css</code></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>
+            <strong>Importante:</strong>
+            cada ejercicio debe utilizar únicamente los archivos
+            correspondientes a su propia carpeta.
+        </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <section id="ejercicios">
+
+        <h2>Ejercicios</h2>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 1 — Selectores CSS</h3>
+            </header>
+
+            <p>
+                Aplicar diferentes tipos de selectores CSS para
+                modificar la apariencia de los elementos de una página.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Crear un título principal.</li>
+                <li>Crear tres párrafos.</li>
+                <li>Utilizar un selector por etiqueta.</li>
+                <li>Utilizar un selector por clase.</li>
+                <li>Utilizar un selector por id.</li>
+                <li>
+                    Aplicar diferentes colores y tamaños de texto
+                    a los elementos.
+                </li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li>Selector por etiqueta.</li>
+                <li>Selector por clase.</li>
+                <li>Selector por id.</li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 2 — Colores y fondos</h3>
+            </header>
+
+            <p>
+                Personalizar la apariencia visual de una página
+                utilizando colores, fondos y dimensiones.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Crear tres cajas.</li>
+                <li>Asignar un color diferente a cada caja.</li>
+                <li>Agregar color al texto.</li>
+                <li>Definir un fondo para la página.</li>
+                <li>Definir el ancho de las cajas.</li>
+                <li>Definir el alto de las cajas.</li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li><code>color</code></li>
+                <li><code>background-color</code></li>
+                <li><code>width</code></li>
+                <li><code>height</code></li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 3 — Tipografía</h3>
+            </header>
+
+            <p>
+                Diseñar visualmente una noticia utilizando diferentes
+                propiedades relacionadas con la tipografía.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Crear un título principal.</li>
+                <li>Crear un subtítulo.</li>
+                <li>Crear dos párrafos.</li>
+                <li>Definir una familia tipográfica.</li>
+                <li>Modificar el tamaño del texto.</li>
+                <li>Modificar el peso de la fuente.</li>
+                <li>Modificar la alineación.</li>
+                <li>Transformar el texto.</li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li><code>font-family</code></li>
+                <li><code>font-size</code></li>
+                <li><code>font-weight</code></li>
+                <li><code>text-align</code></li>
+                <li><code>text-transform</code></li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 4 — Box Model</h3>
+            </header>
+
+            <p>
+                Crear una tarjeta personal y aplicar el modelo
+                de cajas de CSS.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Mostrar el nombre.</li>
+                <li>Mostrar la carrera.</li>
+                <li>Mostrar la ciudad.</li>
+                <li>Agregar un borde.</li>
+                <li>Definir un espacio interno.</li>
+                <li>Definir un espacio externo.</li>
+                <li>Definir ancho y alto.</li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li><code>border</code></li>
+                <li><code>padding</code></li>
+                <li><code>margin</code></li>
+                <li><code>width</code></li>
+                <li><code>height</code></li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 5 — Display</h3>
+            </header>
+
+            <p>
+                Comprender cómo CSS modifica el comportamiento
+                y la distribución de los elementos mediante
+                la propiedad <code>display</code>.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Crear tres elementos <code>div</code>.</li>
+                <li>Crear tres elementos <code>span</code>.</li>
+                <li>Realizar pruebas utilizando <code>block</code>.</li>
+                <li>Realizar pruebas utilizando <code>inline</code>.</li>
+                <li>Realizar pruebas utilizando <code>inline-block</code>.</li>
+                <li>Realizar pruebas utilizando <code>none</code>.</li>
+                <li>
+                    Explicar las diferencias observadas.
+                </li>
+            </ul>
+
+            <h4>Concepto</h4>
+
+            <p>
+                Propiedad <code>display</code>.
+            </p>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 6 — Flexbox</h3>
+            </header>
+
+            <p>
+                Crear un menú de navegación utilizando Flexbox
+                para organizar sus elementos horizontalmente.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Inicio</li>
+                <li>Nosotros</li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+                <li>Utilizar <code>display: flex</code>.</li>
+                <li>Definir la distribución de los elementos.</li>
+                <li>Definir la alineación.</li>
+                <li>Establecer separación entre los elementos.</li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li><code>display: flex</code></li>
+                <li><code>justify-content</code></li>
+                <li><code>align-items</code></li>
+                <li><code>gap</code></li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 7 — Grid</h3>
+            </header>
+
+            <p>
+                Crear una galería de productos utilizando
+                CSS Grid para distribuir los elementos.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Crear seis productos.</li>
+                <li>Organizar los productos en tres columnas.</li>
+                <li>Agregar separación entre los elementos.</li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li><code>display: grid</code></li>
+                <li><code>grid-template-columns</code></li>
+                <li><code>gap</code></li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 8 — Responsive Design</h3>
+            </header>
+
+            <p>
+                Adaptar una página web para que pueda visualizarse
+                correctamente en diferentes tamaños de pantalla.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Crear un contenedor principal.</li>
+                <li>Crear un encabezado.</li>
+                <li>Crear un área de contenido.</li>
+                <li>Utilizar un ancho definido para escritorio.</li>
+                <li>
+                    Adaptar el ancho del contenido para dispositivos
+                    móviles.
+                </li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li>Media Queries.</li>
+                <li><code>@media (max-width: 768px)</code></li>
+                <li>Responsive Design.</li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 9 — Posicionamiento</h3>
+            </header>
+
+            <p>
+                Crear una página que permita experimentar con
+                el posicionamiento de diferentes elementos utilizando CSS.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Crear un contenedor principal.</li>
+                <li>Crear varios elementos dentro del contenedor.</li>
+                <li>
+                    Utilizar diferentes tipos de posicionamiento.
+                </li>
+                <li>
+                    Modificar la posición de los elementos utilizando
+                    las propiedades correspondientes.
+                </li>
+                <li>
+                    Hacer que uno de los elementos se superponga
+                    sobre otro.
+                </li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li><code>position</code></li>
+                <li><code>top</code></li>
+                <li><code>right</code></li>
+                <li><code>bottom</code></li>
+                <li><code>left</code></li>
+                <li><code>z-index</code></li>
+            </ul>
+
+        </article>
+
+
+        <article>
+
+            <header>
+                <h3>Ejercicio 10 — Pseudoclases</h3>
+            </header>
+
+            <p>
+                Crear una página con diferentes elementos interactivos
+                y aplicar estilos dependiendo del estado o posición
+                de cada elemento.
+            </p>
+
+            <h4>Requisitos</h4>
+
+            <ul>
+                <li>Crear un menú con varios enlaces.</li>
+                <li>Crear un formulario con al menos dos campos.</li>
+                <li>Crear una lista con varios elementos.</li>
+                <li>
+                    Aplicar un estilo diferente cuando el usuario
+                    pase el cursor sobre un elemento.
+                </li>
+                <li>
+                    Aplicar un estilo diferente cuando un campo
+                    del formulario reciba el foco.
+                </li>
+                <li>
+                    Aplicar estilos diferentes a determinados
+                    elementos de la lista según su posición.
+                </li>
+            </ul>
+
+            <h4>Conceptos</h4>
+
+            <ul>
+                <li><code>:hover</code></li>
+                <li><code>:focus</code></li>
+                <li><code>:first-child</code></li>
+                <li><code>:nth-child()</code></li>
+            </ul>
+
+        </article>
+
+
+    </section>
+
+</main>
+
+
+<footer class="container">
+
+    <hr>
+
+    <p>
+        <small>
+            Programación en Ambiente Web I — Taller de CSS
+        </small>
+    </p>
+
+</footer>
+```
 
 </body>
+
+</html>
